@@ -1,0 +1,65 @@
+name: Research correction
+description: Something in the documentation is wrong, outdated or unsourced
+title: "[Docs]: "
+labels: ["documentation", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the most valuable kind of issue this project can receive right now. If a claim
+        in `docs/` is wrong, we would rather find out from you than from a failed
+        implementation six months from now.
+
+  - type: input
+    id: document
+    attributes:
+      label: Affected document
+      description: Path and, if you can, the section or heading.
+      placeholder: "docs/01-virtual-display-driver.md — IddCx version matrix"
+    validations:
+      required: true
+
+  - type: textarea
+    id: claim
+    attributes:
+      label: What does the document currently claim?
+      description: Quote the sentence or paste the table row.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is actually true?
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Primary source
+      description: |
+        A link to official documentation, the relevant header or source file, a spec, or a
+        reproducible measurement. We do not merge corrections without a source.
+      placeholder: "https://learn.microsoft.com/en-us/windows-hardware/drivers/..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How much does this matter?
+      options:
+        - Cosmetic — wording or formatting
+        - Material — the claim is wrong but the architecture is unaffected
+        - Architectural — a design decision in the docs rests on this claim
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: translation
+    attributes:
+      label: Translation
+      options:
+        - label: I can also update the Turkish counterpart in `docs/tr/`.
+          required: false

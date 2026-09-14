@@ -1,0 +1,61 @@
+name: Feature request
+description: Suggest a capability, a benchmark or a direction for the project
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        DisplayBoost has a deliberately narrow scope. Frame generation, per-game injection and
+        DRM-protected capture are ruled out by design — see
+        [docs/00-overview.md](https://github.com/raksix/DisplayBoost/blob/main/docs/00-overview.md).
+        Requests outside that scope will be closed with a pointer, not ignored.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation, not the solution. What are you running, and what goes wrong today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like DisplayBoost to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What do you use today instead?
+      description: |
+        In-game upscaling, driver-level scaling (AMD RSR, NVIDIA NIS), Lossless Scaling, Magpie,
+        running at 720p, or nothing at all. Knowing why those are insufficient is the strongest
+        part of a feature request.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Virtual display driver
+        - Capture and present pipeline
+        - Upscaling backend
+        - Configuration and profiles
+        - Benchmarking and measurement
+        - Documentation
+        - Tooling and build
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This request is within the project's stated non-goals.
+          required: false

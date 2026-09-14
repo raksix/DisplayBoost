@@ -1,0 +1,92 @@
+name: Bug report
+description: Report a defect in DisplayBoost
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. DisplayBoost is in the research phase, so a "bug" today most
+        likely means something in the documentation is wrong or a research claim does not hold
+        up. Either way, we want to hear it.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight
+      options:
+        - label: I have searched existing issues and this is not a duplicate.
+          required: true
+        - label: I have read [docs/05-risks-and-limitations.md](https://github.com/raksix/DisplayBoost/blob/main/docs/05-risks-and-limitations.md) and this is not one of the documented limitations.
+          required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the actual behaviour, including the exact steps that produced it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      multiple: true
+      options:
+        - Documentation (docs/, README)
+        - Virtual display driver (IddCx)
+        - Capture (Desktop Duplication, Windows.Graphics.Capture)
+        - Present path / latency
+        - Upscaling (FSR1, NIS, Lanczos, CAS)
+        - Installer / driver signing
+        - Build system
+        - Unsure
+
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version and build
+      description: Run `winver`, or paste the output of `[System.Environment]::OSVersion.Version`.
+      placeholder: "Windows 11 23H2, build 22631.4169"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU and driver version
+      placeholder: "NVIDIA RTX 3070, driver 566.36"
+    validations:
+      required: true
+
+  - type: input
+    id: monitors
+    attributes:
+      label: Monitor layout and native modes
+      description: Include the physical display's native mode and any virtual displays in the topology.
+      placeholder: "1x 1920x1080 @ 144 Hz (primary), 1x virtual 1366x768 @ 60 Hz"
+    validations:
+      required: true
+
+  - type: input
+    id: render-resolution
+    attributes:
+      label: Render resolution and upscaler in use
+      placeholder: "1366x768 -> 1920x1080, FSR 1"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots or timing data
+      description: Drag files in here. For latency or performance claims, include your measurement method.
+      render: text
+    validations:
+      required: false

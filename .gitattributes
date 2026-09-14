@@ -1,0 +1,31 @@
+# Normalize everything to LF in the repository, except Visual Studio
+# project files which the IDE rewrites with CRLF.
+* text=auto eol=lf
+
+*.md               text eol=lf
+*.txt              text eol=lf
+*.yml              text eol=lf
+*.yaml             text eol=lf
+*.json             text eol=lf
+*.cmake            text eol=lf
+CMakeLists.txt     text eol=lf
+
+*.sln              text eol=crlf
+*.vcxproj          text eol=crlf
+*.vcxproj.filters  text eol=crlf
+*.props            text eol=crlf
+
+# ---------------------------------------------------------------
+# Binary artifacts
+# ---------------------------------------------------------------
+*.sys   binary
+*.cab   binary
+*.cat   binary
+*.cer   binary
+*.pvk   binary
+*.pfx   binary
+*.ico   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary

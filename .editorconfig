@@ -1,0 +1,37 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+# Two trailing spaces are a hard line break in Markdown; never strip them.
+trim_trailing_whitespace = false
+
+[*.{c,cc,cpp,h,hpp,inl}]
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+[*.{hlsl,hlsli,fxh}]
+indent_style = space
+indent_size = 4
+
+[CMakeLists.txt]
+indent_style = space
+indent_size = 4
+
+[*.cmake]
+indent_style = space
+indent_size = 4
+
+[*.{json,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[*.{sln,vcxproj,vcxproj.filters,props}]
+indent_style = space
+indent_size = 2
+end_of_line = crlf
