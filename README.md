@@ -16,7 +16,7 @@
 
 ---
 
-> ### ⚠️ Project status: research phase — no code yet
+> **⚠️ Project status: research phase — no code yet**
 >
 > This repository currently contains a **feasibility study**, not an implementation. Every
 > architectural decision below is backed by a source in [docs/07-references.md](docs/07-references.md),

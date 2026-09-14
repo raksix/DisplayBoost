@@ -54,10 +54,10 @@ hangi iddiada bulunduğunu takip edin.
 
 ## Araştırmaya katkı
 
-Bu aşamada en değerli katkı **düzeltmelerdir**. Bkz. [../CONTRIBUTING.md](../CONTRIBUTING.md) ve
+Bu aşamada en değerli katkı **düzeltmelerdir**. Bkz. [../../CONTRIBUTING.md](../../CONTRIBUTING.md) ve
 [research correction issue şablonu](https://github.com/raksix/DisplayBoost/issues/new?template=research_correction.yml).
 
 Bir İngilizce dokümanı düzenlerseniz, aynı pull request içinde `docs/tr/` altındaki Türkçe
 karşılığını da güncelleyin — dosya eşleşme listesi
-[`../scripts/check-doc-parity.sh`](../scripts/check-doc-parity.sh) içinde ve CI tarafından
+[`../../scripts/check-doc-parity.sh`](../../scripts/check-doc-parity.sh) içinde ve CI tarafından
 zorunlu tutuluyor.

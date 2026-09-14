@@ -16,7 +16,7 @@
 
 ---
 
-> ### ⚠️ Proje durumu: araştırma fazı — henüz kod yok
+> **⚠️ Proje durumu: araştırma fazı — henüz kod yok**
 >
 > Bu repoda şu an bir **fizibilite çalışması** var, implementasyon değil. Aşağıdaki her mimari
 > karar [docs/tr/07-kaynaklar.md](docs/tr/07-kaynaklar.md) içinde bir kaynağa dayanıyor ve

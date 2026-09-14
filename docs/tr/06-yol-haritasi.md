@@ -173,6 +173,6 @@ V1'in rakamlarının bir anlam taşıması için:
 
 ## Planı nasıl etkileyebilirsiniz
 
-Şu anda en faydalı katkılar [CONTRIBUTING.md](../CONTRIBUTING.md) içinde listelenenler: araştırmaya
+Şu anda en faydalı katkılar [CONTRIBUTING.md](../../CONTRIBUTING.md) içinde listelenenler: araştırmaya
 düzeltmeler, projenin gözden kaçırdığı benzer projeler, buradaki tahminlerle çelişen ölçümler ve
 ekran sürücüsü veya yakalama overlay'i sevk etmiş kişilerden gelen başarısızlık modları.

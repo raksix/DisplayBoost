@@ -85,7 +85,7 @@ başına bir de adaptörler arası kopya eklenir — genellikle zincirdeki en b�
 
 Yani net sonuç **iş yüküne bağlı ve sıklıkla negatif.** Bu yüzden bu proje performans özelliği
 değil, kapsama ve kalite özelliği olarak belgeleniyor.
-[README'nin genel bakış bölümü](../README_TR.md#dürüst-anlatım-önce-kalite-sonra-performans) aynı
+[README'nin genel bakış bölümü](../../README_TR.md#dürüst-anlatım-önce-kalite-sonra-performans) aynı
 şeyi daha da açık söylüyor.
 
 ## Tasarım ilkeleri
